@@ -1,0 +1,22 @@
+<!--<view wx:for="{{array}}">
+  <view class="list-num-flex" style='background: #CFCFCF;' >
+    <view class='list-item list-item-time'>{{item.timepoint}}</view>
+  </view>
+</view>
+
+<view wx:for="{{array}}">
+  <view class="list-item-text" 
+  style='position:absolute;left:100rpx;top:{{item.height}}rem; height:2rem; background:{{item.color}};'>{{item.title}}</view>
+</view>
+
+-->
+
+<view wx:for="{{array}}" class="list-num-flex" style='display:{{display}};background: {{item.color}};margin-top: {{item.linehide}}rpx;height:{{item.height}}' bindtap='add' id='{{item.id}}' >
+      <view class='list-item list-item-time'>{{item.timepoint}}</view>
+      <view style='height:100%; border:1rpx solid #F7F7F7'></view>
+      <view class='list-item .list-item-text' style='height:100%'>{{item.title}}</view>
+</view>
+
+
+
+

@@ -1,0 +1,18 @@
+.radio {
+  margin:10rpx;
+  padding-left: 10rpx;
+  padding-right: 20rpx;
+  text-align: center;
+  border-radius:15rpx;
+  line-height:80rpx;
+  box-shadow: 10rpx 10rpx 5rpx #888888;
+}
+
+.viewradio{
+  display: flex; 
+  flex-direction: row;  
+  justify-content: center;  
+}
+.submitbutton{
+  margin: 30rpx;
+}

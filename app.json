@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/timeadmin/timeadd",
+    "pages/index/index", 
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,87 @@
+<form bindsubmit="bindFormSubmit">
+<view class="section">
+  
+    <textarea placeholder="内容填写" name="textarea" value="{{todotitle}}"/>
+    <button form-type="submit" class='submitbutton'> 提交 </button>
+  
+</view>
+
+<view class="section">
+  <picker mode="multiSelector" bindchange="bindTimeStartChange"  name="starttime"  value="{{timestartIndex}}" range="{{timestart}}">
+    <view class="picker">
+      任务开始时间：{{timestart[0][timestartIndex[0]]}}:{{timestart[1][timestartIndex[1]]}}
+    </view>
+  </picker>
+
+  <picker mode="multiSelector" bindchange="bindTimeEndChange" name="endtime" value="{{timeendIndex}}" range="{{timeend}}">
+    <view class="picker">
+      任务结束时间：{{timeend[0][timeendIndex[0]]}}:{{timeend[1][timeendIndex[1]]}}
+    </view>
+  </picker>
+
+</view>
+
+<!--<view class="section">
+  <picker bindchange="bindSelecTodoChange" name="selecttodo" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      任务性质:{{array[index]}}
+    </view>
+  </picker>
+</view>-->
+
+<view class="viewradio" >
+<radio-group name="selecttodo" style='border:0rpx solid;width:90%;' wx:if="{{selecttodo==0}}">
+    <radio value="0"  class='radio' checked='true' style='background-color:#63B8FF;'>娱乐时间</radio>
+    <radio value="1"  class='radio' style='background-color:#71C671;'>休息时间</radio>
+    <radio value="2"  class='radio' style='background-color:#F4A460;'>强迫工作</radio>
+    <radio value="3"  class='radio' style='background-color:#FFDF00;'>高效工作</radio>
+    <radio value="4"  class='radio' style='background-color:#EE3B3B;'>拖严浪费</radio>
+</radio-group>
+
+<radio-group name="selecttodo" style='border:0rpx solid;width:90%;' wx:if="{{selecttodo==1}}">
+    <radio value="0"  class='radio' style='background-color:#63B8FF;'>娱乐时间</radio>
+    <radio value="1"  class='radio' checked='true' style='background-color:#71C671;'>休息时间</radio>
+    <radio value="2"  class='radio' style='background-color:#F4A460;'>强迫工作</radio>
+    <radio value="3"  class='radio' style='background-color:#FFDF00;'>高效工作</radio>
+    <radio value="4"  class='radio' style='background-color:#EE3B3B;'>拖严浪费</radio>
+</radio-group>
+
+<radio-group name="selecttodo" style='border:0rpx solid;width:90%;' wx:if="{{selecttodo==2}}">
+    <radio value="0"  class='radio' style='background-color:#63B8FF;'>娱乐时间</radio>
+    <radio value="1"  class='radio' style='background-color:#71C671;'>休息时间</radio>
+    <radio value="2"  class='radio' checked='true' style='background-color:#F4A460;'>强迫工作</radio>
+    <radio value="3"  class='radio' style='background-color:#FFDF00;'>高效工作</radio>
+    <radio value="4"  class='radio' style='background-color:#EE3B3B;'>拖严浪费</radio>
+</radio-group>
+
+<radio-group name="selecttodo" style='border:0rpx solid;width:90%;' wx:if="{{selecttodo==3}}">
+    <radio value="0"  class='radio' style='background-color:#63B8FF;'>娱乐时间</radio>
+    <radio value="1"  class='radio' style='background-color:#71C671;'>休息时间</radio>
+    <radio value="2"  class='radio' style='background-color:#F4A460;'>强迫工作</radio>
+    <radio value="3"  class='radio' checked='true' style='background-color:#FFDF00;'>高效工作</radio>
+    <radio value="4"  class='radio' style='background-color:#EE3B3B;'>拖严浪费</radio>
+</radio-group>
+
+<radio-group name="selecttodo" style='border:0rpx solid;width:90%;' wx:if="{{selecttodo==4}}">
+    <radio value="0"  class='radio' style='background-color:#63B8FF;'>娱乐时间</radio>
+    <radio value="1"  class='radio' style='background-color:#71C671;'>休息时间</radio>
+    <radio value="2"  class='radio' style='background-color:#F4A460;'>强迫工作</radio>
+    <radio value="3"  class='radio' style='background-color:#FFDF00;'>高效工作</radio>
+    <radio value="4"  class='radio' checked='true' style='background-color:#EE3B3B;'>拖严浪费</radio>
+</radio-group>
+
+<radio-group name="selecttodo" style='border:0rpx solid;width:90%;' wx:if="{{selecttodo=='null'}}">
+    <radio value="0"  class='radio' style='background-color:#63B8FF;'>娱乐时间</radio>
+    <radio value="1"  class='radio' style='background-color:#71C671;'>休息时间</radio>
+    <radio value="2"  class='radio' style='background-color:#F4A460;'>强迫工作</radio>
+    <radio value="3"  class='radio' checked='true' style='background-color:#FFDF00;'>高效工作</radio>
+    <radio value="4"  class='radio' style='background-color:#EE3B3B;'>拖严浪费</radio>
+</radio-group>
+
+</view>
+
+</form>
+
+
+
+
