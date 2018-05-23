@@ -22,7 +22,7 @@ function ajax1(data = '', fn, method = "get", header = {}) {
         'img': "@image('200x100', '#4A7BF7','#fff','pic')",
         'title': '@ctitle(3,8)',
         'city': "@county(true)",
-        'stock_num': '@integer(0,100)',//库存数量  
+        'stock_num': '@integer(0,100)',//库存数量  //ssss
         'marketing_start': '@datetime()',
         'marketing_stop': '@now()',
         'price': '@integer(100,2000)',//现价，单位：分  
